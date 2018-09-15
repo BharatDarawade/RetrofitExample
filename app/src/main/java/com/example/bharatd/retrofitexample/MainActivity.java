@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         mAPIService = ApiUtils.getAPIService();
 	Toast.makeToast(this,"Test",Toast.LENGTH_LONG).show();
+	Toast.makeToast(this,"Test",Toast.LENGTH_LONG).show();
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
