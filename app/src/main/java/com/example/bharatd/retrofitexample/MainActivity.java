@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
-                Log.e("Request Failed", "Unable to submit post to API.");
+               // Log.e("Request Failed", "Unable to submit post to API.");
+ 		 Log.e("Request Failed", "Unable to submit post to API.");
             }
         });
     }
