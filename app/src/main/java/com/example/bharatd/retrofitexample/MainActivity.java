@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mResponseTv = (TextView) findViewById(R.id.tv_response);
 
         mAPIService = ApiUtils.getAPIService();
-	Toast.makeToast(this,"Test",Toast.LENGTH_LONG).show();
-        submitBtn.setOnClickListener(new View.OnClickListener() {
+	submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String title = titleEt.getText().toString().trim();
