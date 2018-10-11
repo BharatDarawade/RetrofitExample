@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mResponseTv = (TextView) findViewById(R.id.tv_response);
 
         mAPIService = ApiUtils.getAPIService();
-
-        submitBtn.setOnClickListener(new View.OnClickListener() {
+	submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String title = titleEt.getText().toString().trim();
@@ -59,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<Post> call, Throwable t) {
-                Log.e("Request Failed", "Unable to submit post to API.");
+               // Log.e("Request Failed", "Unable to submit post to API.");
+ 		 Log.e("Request Failed", "Unable to submit post to API.");
             }
         });
     }
